@@ -3,7 +3,7 @@
 ## USER SPECIFIC DIRECTORIES ##
 
 # CUDA directory:
-CUDA_ROOT_DIR=/usr/local/cuda-11
+CUDA_ROOT_DIR=/usr/local/cuda-11.4
 
 ##########################################################
 
@@ -19,8 +19,8 @@ CC_LIBS=
 
 NVCC=nvcc
 # NVCC_FLAGS= -arch=sm_60 --std c++17 --use_fast_math  # PASCAL
- NVCC_FLAGS= -arch=sm_75 --std c++17 --use_fast_math -O3 # TURING
-# NVCC_FLAGS= -arch=sm_80 --std c++17 --use_fast_math  # AMPERE
+# NVCC_FLAGS= -arch=sm_75 --std c++17 --use_fast_math -O3 # TURING
+NVCC_FLAGS= -arch=sm_80 --std c++17 --use_fast_math -O3  # AMPERE
 NVCC_LIBS=
 
 # CUDA library directory:
